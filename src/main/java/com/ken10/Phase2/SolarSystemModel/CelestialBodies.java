@@ -65,7 +65,7 @@ public abstract class CelestialBodies {
         else if (this instanceof Titan) return new Titan(getName(), getPosition().copy(),
                 getVelocity().copy(), getMass(), getRelativeScalingFactor(), getSize());
         else return new Probe(getName(), getPosition().copy(),
-                    getVelocity().copy(), getRelativeScalingFactor(), getSize());
+            getVelocity().copy(), getMass(), getRelativeScalingFactor(), getSize());
     }
 
 }
